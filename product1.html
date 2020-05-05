@@ -1,0 +1,76 @@
+<?php
+     $conn=mysqli_connect('localhost','root','','customer');
+if (mysqli_connect_errno()) {
+   echo "error";
+}
+else
+{
+
+  echo "connected";
+  echo "<br>";
+}
+if(isset($_POST['submit'])){
+    
+    $name=$_POST['name'];
+    $mobile=$_POST['mobile'];
+    $shoes=$_POST['shoes'];
+     $brand=$_POST['brand'];
+ 
+
+
+   $query2= "INSERT INTO product1(name,mobile,shoes,brand) VALUES('$name',$mobile','$shoes',' $brand')";
+            $result1=mysqli_query($conn,$query2);
+            echo"aded";
+        }
+?>
+<!DOCTYPE html>
+	<title>Shoes Details</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<html>
+<head>
+</head>
+
+<!-- <style type="text/css">
+	.border{
+		margin-top: 200px;
+margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+	}
+	
+</style> -->
+	<body>
+
+		
+	<form method="post" action="patient.php">
+		<center><label><b>APPLICATION FORM</b></label></center>
+		<br><br>
+		
+		<div class="form-group col-md-3">
+			<label>NAME</label>
+			<input type="text" name="name" class="form-control">
+		</div><br><br>
+		<div class="form-group col-md-3">
+			<label>MOBILE NUMBER</label>
+			<input type="number" name="mobile" class="form-control">
+		</div><br><br>
+
+		<div class="form-group col-md-3">
+			<label>SHOES SIZES</label>
+			<input type="number" name="shoes" class="form-control">
+		</div><br><br>
+		
+		<div class="form-group col-md-3">
+			<label>BRAND</label>
+			<input type="text" name="brand" class="form-control">
+		</div><br><br>
+
+		<div>
+		<button type="submit" name="submit" class="btn btn-primary">Submit</button>
+		</div>
+	
+</div>
+</form>
+</body>
+</html>

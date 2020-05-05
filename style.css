@@ -1,0 +1,73 @@
+ul{
+	float: right;
+	list-style-type: none;
+}
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	font-style: bold;
+	font-size: 25px;
+	color: red;
+	padding: 5px 20px;
+	border: 3px solid black;
+	transition: 0.7s ease;
+}
+
+ul li a:hover{
+	background-color: aqua;
+}
+
+
+body{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("shoe.jpg");
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+p.welcome{
+	font-style: bold;
+	word-spacing: 20px;
+	font-size: 70px;
+	color: black;
+	text-align: left;
+}
+
+p.name{
+	font-style: italic;
+	font-size: 70px;
+	word-spacing: 20px;
+	color: black;
+	text-align: left;
+}
+
+form.form1{
+	align-self: center;
+	text-align: center;
+	padding: 20px;
+	border: 2px solid black;
+	background-color: white;
+	border-radius: 15px;
+}
+
+.table{
+	padding-right: 400px;
+	padding-left: 400px;
+}
+
+form div{
+	padding: 15px;
+}
+
+input[type=text]{
+	padding: 5px 5px;
+	border-radius: 8px;
+
+}
+
+.img_frame { border: 1px solid #827863; background: #a8a08e; padding: 9px; margin-bottom: 10px  }

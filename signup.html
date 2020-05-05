@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>Sign up</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function valid(){
+            var text;
+var x = document.forms["form1"]["name"].value;
+  if (x == "") 
+  {
+    alert("Name must be filled out");
+    
+  }
+  
+ 
+
+   var x1 = document.forms["form1"]["num"].value;
+     if (isNaN(x1))
+     
+      {
+         alert("enter correct Mobile no");
+      } 
+   
+     
+  
+    var p3= document.forms["form1"]["password"].value;
+    var p4= document.forms["form1"]["repassword"].value;
+    if(p3!==p4)
+    {
+        alert("enter correct password");
+    }
+}   
+
+  
+</script>
+</head>
+<body >
+	<header>
+		<div>
+			<ul>
+				<li><a href="index.php">Home</a></li>
+				<!-- <li><a href="#">About</a></li>
+				<li><a href="#">Help</a></li> -->
+				<li><a href="signin.html">Sign In</a></li>
+				<li><a href="#">Sign Up</a></li>
+			</ul>
+		</div>	
+	</header><br><br><br><br>
+
+    <h1 style="font-size: 50px; text-align: center; font-style: initial;">Sign Up</h1>
+
+    <div class="table">
+	<form action="signup.php" method="post" name="form1" class="form1">
+		<div class="in">
+            <span></i></span>
+            <input type="text" placeholder="First Name" name="name            </div>
+        <div class="in">
+            <span></i></span>
+            <input type="text" placeholder="Last Name" name="surname"> 
+        </div>
+        <div class="in">
+            <span></i></span>
+            <input type="text" placeholder="Email-Id" name="email" pattern="[a-zA-Z0-9]{}@[a-z]{5}.[a-z]{3}">
+        </div>
+        <div class="in">
+            <span></i></span>
+            <input type="text" placeholder="Phone No." name="num">
+        </div>
+        <div class="in">
+            <span></i></span>
+            <input type="text" placeholder="Enter Password" name="password">
+        </div><div class="in">
+            <span></i></span>
+            <input type="text" placeholder="Re-Enter Password" name="repassword" >
+        </div>
+        <button type="Submit" name="Submit" value="Add" class="btn">Sign me up!</button>
+	</form>
+    </div>
+
+
+
+</body>
+</html>
